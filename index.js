@@ -31,8 +31,10 @@ app.get("/api/:date?", function(req, res) {
   let utc = null;
   if (date === undefined) {
     date = new Date();
-  } else {
+  } else if (isNaN(date)) {
     date = new Date(date);
+  } else {
+    date = new Date(parseInt(date));
   }
   unix = date.getTime();
   // convert date to utc 
