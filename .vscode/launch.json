@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "pwa-chrome",
+            "name": "timeStamp service",
+            "request": "launch",
+            "url": "http://localhost:62161/"
+        }
+    ]
+}
